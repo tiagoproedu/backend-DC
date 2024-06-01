@@ -19,9 +19,9 @@ const sendEmail = (to, subject, text) => {
 
     transporter.sendMail(mailOptions, (error, info) => {
         if (error) {
-            console.error('Error sending email:', error);
+            console.error('Erro ao enviar o e-mail:', error);
         } else {
-            console.log('Email sent:', info.response);
+            console.log('E-mail enviado:', info.response);
         }
     });
 };
